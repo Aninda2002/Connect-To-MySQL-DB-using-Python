@@ -3,7 +3,6 @@ from models.db import get_connection
 
 student_bp = Blueprint("student_bp", __name__)
 
-# CREATE
 @student_bp.route("/students", methods=["POST"])
 def create_student():
     data = request.get_json()
@@ -21,7 +20,6 @@ def create_student():
     return jsonify({"message": "Student created"}), 201
 
 
-# READ ALL
 @student_bp.route("/students", methods=["GET"])
 def get_students():
     conn = get_connection()
@@ -36,7 +34,6 @@ def get_students():
     return jsonify(result)
 
 
-# READ ONE
 @student_bp.route("/students/<int:id>", methods=["GET"])
 def get_student(id):
     conn = get_connection()
@@ -51,7 +48,6 @@ def get_student(id):
     return jsonify(result)
 
 
-# UPDATE
 @student_bp.route("/students/<int:id>", methods=["PUT"])
 def update_student(id):
     data = request.get_json()
@@ -69,7 +65,6 @@ def update_student(id):
     return jsonify({"message": "Student updated"})
 
 
-# DELETE
 @student_bp.route("/students/<int:id>", methods=["DELETE"])
 def delete_student(id):
     conn = get_connection()
