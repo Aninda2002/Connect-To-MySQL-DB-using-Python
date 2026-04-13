@@ -1,3 +1,4 @@
+# This step is for MySQL setup
 CREATE DATABASE your_database;
 
 USE your_database;
