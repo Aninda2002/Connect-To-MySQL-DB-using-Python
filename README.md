@@ -18,5 +18,5 @@ A simple REST API using Flask and MySQL with full CRUD functionality.
 ### 1. Clone repo
 
 ```bash
-git clone https://github.com/Aninda2002/flask-mysql-crud.git
+git clone https://github.com/Aninda2002/Connect-To-MySQL-DB-using-Python.git
 cd flask-mysql-crud
