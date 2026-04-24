@@ -9,4 +9,3 @@ DB_CONFIG = {
     "password": os.getenv("DB_PASSWORD"),
     "database": os.getenv("DB_NAME")
 }
- 
