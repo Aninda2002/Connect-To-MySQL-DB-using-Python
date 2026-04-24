@@ -2,7 +2,7 @@
 
 A simple REST API using Flask and MySQL with full CRUD functionality.
 
----
+--- 
 
 ## 📌 Features
 
