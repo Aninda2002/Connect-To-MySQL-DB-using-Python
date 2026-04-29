@@ -65,7 +65,6 @@ def update_student(id):
     return jsonify({"message": "Student updated"})
 
 
-
 @student_bp.route("/students/<int:id>", methods=["DELETE"])
 def delete_student(id):
     conn = get_connection()
